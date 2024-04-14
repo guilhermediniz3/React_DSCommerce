@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+}
+a, a:hover{
+    /* tirar o efeito de link */
+    text-decoration: none;
+    /* não mudar de cor */
+    color: unset;
+}
+
+html, body {
+    background-color: #e8e8e8;
+}
+
+header {
+    background-color: #FFE500;
+     /* Altura do header*/
+    height: 70px;
+     /* O display flex permite que os intes fiquem flexíveis dentro do container e podem ser posicionados.*/
+     display: flex;
+      /* Alinhou o container ao centro*/
+     align-items: center;
+ 
+
+}
+
+nav{
+ 
+   
+    color: #636363;
+           /* permite os itens serem redimencionados */
+    display: flex;
+           /* alinha o elemento na outra ponta*/
+    justify-content: space-between;
+           /* alinha o elemento ao centro*/
+    align-items: center;
+}
+.container {
+ 
+    width: 100%;
+    max-width: 960px;
+    /* centralizar o container
+margin: 0 auto; é uma declaração CSS que configura a margem de um elemento.
+margin: é uma propriedade CSS que define as margens de um elemento.
+0: este valor define a margem superior e inferior como zero pixels. Ou seja, não há espaço entre o elemento e seus elementos vizinhos acima e abaixo.
+auto: este valor é aplicado à margem esquerda e direita, e faz com que o navegador calcule automaticamente o espaçamento necessário para distribuir o elemento horizontalmente no centro do contêiner pai. Isso é frequentemente usado para centralizar elementos horizontais, como divs, dentro de seus contêineres pai.
+Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um elemento dentro de seu contêiner pai.
+     */
+    margin: 0 auto;
+    
+}
+
+
+
+#product-details{
+   /* 20 px na vertical e 0 na horizontal  */
+    padding: 20px 0 ;
+ 
+}
+
+
+.card {
+      border: 1px solid #D9D9D9;
+    /*arredondando a parte superior da borda */
+      border-radius: 4px 4px 00;
+      background-color: #fff;
+ 
+ 
+ }
+
+.card-top {
+    padding: 10px;
+  /*alinhando imagem ao centro  com display e justify*/
+    display: flex;
+    justify-content: center;
+   /*dividindo o card com a borda ao meio do layout*/
+   border: 1px solid #D9D9D9
+}
+
+.card-top img {
+   /* largura da imagem */
+    width: 220 px;
+
+}
+.card-botton{
+padding: 10px 20px 20px 20px;
+
+}
+.card-bottom h3 {
+    color: #0CAF1D;
+    font-size: 20px;
+}
+
+.card-bottom h4 {
+    color: #636363;
+    font-size: 12px;
+}
+.card-bottom p {
+color: #636363;
+font-size: 12px;
+margin: 10px 0;
+
+}
+.category-container {
+    display: flex;   
+     
+    
+    }
+.category {
+    padding: 0 20px;
+    margin-right: 20px;
+    background-color: #636363;
+    color: #fff;
+     /* arredondando bordas*/
+    border-radius: 4px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.btn-page-container{
+width: 220PX;
+/* cria um layout de grade pode ser organizado em linhas e colunas*/
+display: grid;
+ /* espaço das grades*/
+grid-gap: 20px;
+
+
+}
+.btn {
+    border-radius:  4px;
+    height: 42px;
+    font-size: 16px;
+    font-weight:700 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.btn-blue{
+    background-color: #3483FA;
+    color: #fff
+}
+
+.btn-white{
+    background-color:  #fff;
+    color: #3483FA;
+    border: 1px solid  #3483FA;
+}
+
+
+
+.mb20 {
+    margin-bottom: 20px ;
+}
