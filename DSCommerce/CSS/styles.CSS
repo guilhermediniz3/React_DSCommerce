@@ -77,59 +77,10 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
  
  }
 
-.card-top {
-    padding: 10px;
-  /*alinhando imagem ao centro  com display e justify*/
-    display: flex;
-    justify-content: center;
-   /*dividindo o card com a borda ao meio do layout*/
-   border: 1px solid #D9D9D9
-}
-
-.card-top img {
-   /* largura da imagem */
-    width: 220 px;
-
-}
-.card-botton{
-padding: 10px 20px 20px 20px;
-
-}
-.card-bottom h3 {
-    color: #0CAF1D;
-    font-size: 20px;
-}
-
-.card-bottom h4 {
-    color: #636363;
-    font-size: 12px;
-}
-.card-bottom p {
-color: #636363;
-font-size: 12px;
-margin: 10px 0;
-
-}
-.category-container {
-    display: flex;   
-     
+.line-bottom {
+    /*dividindo o card com a borda ao meio do layout*/
+    border-bottom:  1px solid #d9d9d9;    
     
-    }
-.category {
-    padding: 0 20px;
-    margin-right: 20px;
-    background-color: #636363;
-    color: #fff;
-     /* arredondando bordas*/
-    border-radius: 4px;
-    height: 30px;
-    font-size: 12px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
 }
 
 .btn-page-container{
