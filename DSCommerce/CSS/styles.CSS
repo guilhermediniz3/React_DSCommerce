@@ -40,6 +40,8 @@ html,
 body {
     background-color:var(--dsc-color-bg-primary);
 }
+    /* ------------------------------------------------------------------------------------------------------------  */ 
+    /* header styles  */
 
 header {
     background-color:var(--dsc-color-bg-secondary);
@@ -64,6 +66,21 @@ nav{
            /* alinha o elemento ao centro*/
     align-items: center;
 }
+nav h1 {
+    font-size: 14px;
+    font-weight: 700;
+}
+nav a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+    /* ------------------------------------------------------------------------------------------------------------  */ 
+    /* generic styles  */
+    .dsc-mb20 {
+        margin-bottom: 20px ;
+    }
+    
 .dsc-container {
  
     width: 100%;
@@ -82,7 +99,8 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
 
 
 
-
+    /* ------------------------------------------------------------------------------------------------------------  */ 
+    /* card styles  */
 
 .dsc-card {
       border: 1px solid var(--dsc-color-card-border);
@@ -98,7 +116,8 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
     border-bottom:  1px solid var(--dsc-color-card-border);
     
 }
-
+    /* ------------------------------------------------------------------------------------------------------------  */ 
+    /* button styles  */
 .dsc-btn-page-container{
 width: 220PX;
 /* cria um layout de grade pode ser organizado em linhas e colunas*/
@@ -132,6 +151,3 @@ grid-gap: 20px;
 
 
 
-.dsc-mb20 {
-    margin-bottom: 20px ;
-}
