@@ -64,7 +64,7 @@ nav{
            /* alinha o elemento ao centro*/
     align-items: center;
 }
-.container {
+.dsc-container {
  
     width: 100%;
     max-width: 960px;
@@ -81,14 +81,10 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
 
 
 
-#product-details{
-   /* 20 px na vertical e 0 na horizontal  */
-    padding: 20px 0 ;
- 
-}
 
 
-.card {
+
+.dsc-card {
       border: 1px solid var(--dsc-color-card-border);
     /*arredondando a parte superior da borda */
       border-radius: 4px 4px 00;
@@ -97,13 +93,13 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
  
  }
 
-.line-bottom {
+.dsc-line-bottom {
     /*dividindo o card com a borda ao meio do layout*/
     border-bottom:  1px solid var(--dsc-color-card-border);
     
 }
 
-.btn-page-container{
+.dsc-btn-page-container{
 width: 220PX;
 /* cria um layout de grade pode ser organizado em linhas e colunas*/
 display: grid;
@@ -112,7 +108,7 @@ grid-gap: 20px;
 
 
 }
-.btn {
+.dsc-btn {
     border-radius:  4px;
     height: 42px;
     font-size: 16px;
@@ -122,12 +118,12 @@ grid-gap: 20px;
     align-items: center;
 }
     
-.btn-blue{
+.dsc-btn-blue{
     background-color: var(--dsc-color-btn-primary);
     color: var(--dsc-color-btn-inverse);
 }
 
-.btn-white{
+.dsc-btn-white{
     border: 1px solid  var(--dsc-color-btn-primary);
     background-color: var(--dsc-color-btn-inverse);
     color:  var(--dsc-color-btn-primary);
@@ -136,6 +132,6 @@ grid-gap: 20px;
 
 
 
-.mb20 {
+.dsc-mb20 {
     margin-bottom: 20px ;
 }
