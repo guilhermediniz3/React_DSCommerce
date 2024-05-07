@@ -40,6 +40,11 @@ html,
 body {
     background-color:var(--dsc-color-bg-primary);
 }
+
+main{
+    padding: 0 20px;
+
+}
     /* ------------------------------------------------------------------------------------------------------------  */ 
     /* header styles  */
 
@@ -51,7 +56,7 @@ header {
      display: flex;
       /* Alinhou o container ao centro*/
      align-items: center;
- 
+     padding: 0 20px ;
 
 }
 
@@ -119,7 +124,8 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
     /* ------------------------------------------------------------------------------------------------------------  */ 
     /* button styles  */
 .dsc-btn-page-container{
-width: 220PX;
+     /* define a responsividade na resolucao mobile onde o botao ocupa 100 porcento*/
+    width: 100%;
 /* cria um layout de grade pode ser organizado em linhas e colunas*/
 display: grid;
  /* espaço das grades*/
@@ -127,6 +133,14 @@ grid-gap: 20px;
 
 
 }
+ /* @media define a responsividade apartir de 576 px*/
+@media(min-width: 576px){
+    .dsc-btn-page-container{
+    /* define a responsividade na resolucao apartir de 576 px com o botão ocupando 220px*/
+      width: 220px;
+    }
+}
+
 .dsc-btn {
     border-radius:  4px;
     height: 42px;

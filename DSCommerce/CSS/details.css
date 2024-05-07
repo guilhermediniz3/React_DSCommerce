@@ -3,13 +3,16 @@
 
 
 .dsc-category-container {
-    display: flex;   
+    display: flex; 
+   /* quebrar linha */ 
+    flex-wrap: wrap;
          
     }
 
 .dsc-category {
     padding: 0 20px;
     margin-right: 20px;
+    margin-bottom: 10px;
     background-color:var(--dsc-color-bg-tertiary);
     color:var(--dsc-color-font-tertiary);
      /* arredondando bordas*/
@@ -45,11 +48,11 @@
      width: 220 px;
  
  }
- .dsc-product-details-top-botton{
- padding: 10px 20px 20px 20px;
+ .dsc-product-details-botton{
+ padding: 10px 20px;
  
  }
- dsc-product-details-top-bottom h3 {
+ .dsc-product-details-top-bottom h3 {
      color: var(--dsc-color-font-secondary);
      font-size: 20px;
  }
