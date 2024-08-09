@@ -5,3 +5,64 @@
     padding: 20px 0;
 }
 
+
+/* 
+.dsc-catalog-cards Define o contêiner como um layout de grid, permitindo a criação de layouts bidimensionais com linhas e colunas. 
+
+grid-gap: 20px;
+Define o espaçamento entre as linhas e as colunas do grid. Neste caso, haverá uma margem de 20 pixels entre cada item, tanto vertical quanto horizontalmente.
+
+grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+Define o layout das colunas no grid. Utiliza a função repeat() para criar colunas que se ajustam automaticamente ao espaço disponível.
+- auto-fill: Cria o maior número possível de colunas que caibam no contêiner, considerando as restrições especificadas.
+- minmax(225px, 1fr): Define o tamanho mínimo e máximo das colunas.
+  - 225px: Tamanho mínimo da coluna. Cada coluna terá pelo menos 225 pixels de largura.
+  - 1fr: Unidade de fração que faz com que a coluna possa crescer para preencher o espaço restante no contêiner.
+
+Como Funciona Juntas:
+O contêiner de grid será preenchido com o maior número possível de colunas, cada uma com uma largura mínima de 225 pixels.
+As colunas podem crescer para preencher o espaço restante no contêiner.
+Se houver mais espaço disponível no contêiner do que o necessário para as colunas mínimas, as colunas serão ajustadas para ocupar esse espaço adicional igualmente.
+*/
+
+.dsc-catalog-cards{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(225px,1fr));
+
+}
+
+.dsc-catalog-card-top{
+
+    display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.dsc-catalog-card-top img{
+  width: 150px;
+  height: 150px;
+
+}
+.dsc-catalog-card-bottom {
+padding: 10px 20px;
+/*define altura  minima do card */
+min-height: 110px;
+
+
+}
+
+.dsc-catalog-card-bottom h3 {
+    color: var(--dsc-color-font-secondary);
+    font-size: 20px;
+
+}
+
+
+.dsc-catalog-card-bottom h4 {
+    color: var(--dsc-color-font-primary);
+    font-size: 12px;
+
+}
+
+
