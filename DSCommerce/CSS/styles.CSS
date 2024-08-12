@@ -1,21 +1,21 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-    /* declaração de variáveis de css */
+
+/* declaração de variáveis de css */
 :root {
 
---dsc-color-bg-primary: #e8e8e8;
---dsc-color-bg-secondary: #ffe500;
---dsc-color-bg-tertiary: #636363;
+    --dsc-color-bg-primary: #e8e8e8;
+    --dsc-color-bg-secondary: #ffe500;
+    --dsc-color-bg-tertiary: #636363;
 
---dsc-color-card-bg:#fff;
---dsc-color-card-border: #d9d9d9;
---dsc-color-btn-primary: #3483fa;
---dsc-color-btn-inverse: #fff;
+    --dsc-color-card-bg: #fff;
+    --dsc-color-card-border: #d9d9d9;
+    --dsc-color-btn-primary: #3483fa;
+    --dsc-color-btn-inverse: #fff;
 
---dsc-color-font-primary: #636363;
---dsc-color-font-secondary: #0caf1d;
---dsc-color-font-tertiary:#fff;
-
+    --dsc-color-font-primary: #636363;
+    --dsc-color-font-secondary: #0caf1d;
+    --dsc-color-font-tertiary: #fff;
+    --dsc-color-font-placeholder: #d9d9d9
 
 
 
@@ -23,13 +23,15 @@
 }
 
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Open Sans';
 }
-a, a:hover{
+
+a,
+a:hover {
     /* tirar o efeito de link */
     text-decoration: none;
     /* não mudar de cor */
@@ -38,59 +40,63 @@ a, a:hover{
 
 html,
 body {
-    background-color:var(--dsc-color-bg-primary);
+    background-color: var(--dsc-color-bg-primary);
 }
 
-main{
+main {
     padding: 0 20px;
 
 }
-    /* ------------------------------------------------------------------------------------------------------------  */ 
-    /* header styles  */
+
+/* ------------------------------------------------------------------------------------------------------------  */
+/* header styles  */
 
 header {
-    background-color:var(--dsc-color-bg-secondary);
-     /* Altura do header*/
+    background-color: var(--dsc-color-bg-secondary);
+    /* Altura do header*/
     height: 70px;
-     /* O display flex permite que os intes fiquem flexíveis dentro do container e podem ser posicionados.*/
-     display: flex;
-      /* Alinhou o container ao centro*/
-     align-items: center;
-     padding: 0 20px ;
+    /* O display flex permite que os intes fiquem flexíveis dentro do container e podem ser posicionados.*/
+    display: flex;
+    /* Alinhou o container ao centro*/
+    align-items: center;
+    padding: 0 20px;
 
 }
 
-nav{
- 
-   
+nav {
+
+
     color: var(--dsc-color-font-primary);
-           /* permite os itens serem redimencionados */
+    /* permite os itens serem redimencionados */
     display: flex;
-           /* alinha o elemento na outra ponta*/
+    /* alinha o elemento na outra ponta*/
     justify-content: space-between;
-           /* alinha o elemento ao centro*/
+    /* alinha o elemento ao centro*/
     align-items: center;
 }
+
 nav h1 {
     font-size: 14px;
     font-weight: 700;
 }
+
 nav a {
     font-size: 14px;
     font-weight: 700;
 }
 
-    /* ------------------------------------------------------------------------------------------------------------  */ 
-    /* generic styles  */
-    .dsc-mb20 {
-        margin-bottom: 20px ;
-    }
-    .dsc-mt20 {
-        margin-top: 20px ;
-    }
-    
+/* ------------------------------------------------------------------------------------------------------------  */
+/* generic styles  */
+.dsc-mb20 {
+    margin-bottom: 20px;
+}
+
+.dsc-mt20 {
+    margin-top: 20px;
+}
+
 .dsc-container {
- 
+
     width: 100%;
     max-width: 960px;
     /* centralizar o container
@@ -101,72 +107,74 @@ auto: este valor é aplicado à margem esquerda e direita, e faz com que o naveg
 Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um elemento dentro de seu contêiner pai.
      */
     margin: 0 auto;
-    
+
 }
 
 
 
 
-    /* ------------------------------------------------------------------------------------------------------------  */ 
-    /* card styles  */
+/* ------------------------------------------------------------------------------------------------------------  */
+/* card styles  */
 
 .dsc-card {
-      border: 1px solid var(--dsc-color-card-border);
+    border: 1px solid var(--dsc-color-card-border);
     /*arredondando a parte superior da borda */
-      border-radius: 4px 4px 00;
-      background-color: var(--dsc-color-card-bg);
- 
- 
- }
+    border-radius: 4px 4px 00;
+    background-color: var(--dsc-color-card-bg);
+
+
+}
 
 .dsc-line-bottom {
     /*dividindo o card com a borda ao meio do layout*/
-    border-bottom:  1px solid var(--dsc-color-card-border);
-    
+    border-bottom: 1px solid var(--dsc-color-card-border);
+
 }
-    /* ------------------------------------------------------------------------------------------------------------  */ 
-    /* button styles  */
-.dsc-btn-page-container{
-     /* define a responsividade na resolucao mobile onde o botao ocupa 100 porcento*/
+
+/* ------------------------------------------------------------------------------------------------------------  */
+/* button styles  */
+.dsc-btn-page-container {
+    /* define a responsividade na resolucao mobile onde o botao ocupa 100 porcento*/
     width: 100%;
-/* cria um layout de grade pode ser organizado em linhas e colunas*/
-display: grid;
- /* espaço das grades*/
-grid-gap: 20px;
+    /* cria um layout de grade pode ser organizado em linhas e colunas*/
+    display: grid;
+    /* espaço das grades*/
+    grid-gap: 20px;
 
 
 }
- /* @media define a responsividade apartir de 576 px*/
-@media(min-width: 576px){
-    .dsc-btn-page-container{
-    /* define a responsividade na resolucao apartir de 576 px com o botão ocupando 220px*/
-      width: 220px;
+
+/*  @media define a responsividade apartir de 576 px*/
+@media(min-width: 576px) {
+    .dsc-btn-page-container {
+        /* define a responsividade na resolucao apartir de 576 px com o botão ocupando 220px*/
+        width: 220px;
     }
 }
 
 .dsc-btn {
-    border-radius:  4px;
+    border-radius: 4px;
     height: 42px;
     font-size: 16px;
-    font-weight:700 ;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-    
-.dsc-btn-blue{
+
+.dsc-btn-blue {
     background-color: var(--dsc-color-btn-primary);
     color: var(--dsc-color-btn-inverse);
 }
 
-.dsc-btn-white{
-    border: 1px solid  var(--dsc-color-btn-primary);
+.dsc-btn-white {
+    border: 1px solid var(--dsc-color-btn-primary);
     background-color: var(--dsc-color-btn-inverse);
-    color:  var(--dsc-color-btn-primary);
-   
+    color: var(--dsc-color-btn-primary);
+
 }
 
-.dsc-btn-next-page{
+.dsc-btn-next-page {
 
     border: 1px solid var(--dsc-color-btn-primary);
     padding: 10px;
@@ -178,6 +186,83 @@ grid-gap: 20px;
     cursor: pointer;
 }
 
+/* *  -----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* * search bar styles formata o botão de pesquisa*/
+
+.dsc-search-bar {
+
+    height: 40px;
+    display: flex;
+    color: var(--dsc-color-font-primary);
+}
+
+.dsc-search-bar button,
+.dsc-search-bar input {
+
+    border: 1px solid var(--dsc-color-card-border);
+
+}
+
+.dsc-search-bar input {
+    width: calc(100% - 80px);
+    border-left: none;
+    border-right: none;
+    padding: 0 10px;
+    color: var(--dsc-color-font-primary);
+}
+
+/* *  : target elementos com base em seu estado ou posição ::  estiliza partes especificas de um elemento como antes, depois ou dentro do conteudo*/
+.dsc-search-bar input:focus {
+    /* * remove a borda ao clicar na pesquisa*/
+    outline: none;
+    font-size: 16px;
+
+}
+.dsc-search-bar input::placeholder {
+
+    color: var(--dsc-color-font-placeholder)
+
+}
+
+.dsc-search-bar button{
+    width: 40px;
+    color: var(--dsc-color-font-primary);
+}
+
+/* 
+border-radius: 10px 0px 0px 10px;
+
+Primeiro valor (10px): Raio do canto superior esquerdo.
+Segundo valor (0px): Raio do canto superior direito.
+Terceiro valor (0px): Raio do canto inferior direito.
+Quarto valor (10px): Raio do canto inferior esquerdo.
+Resultado: Apenas os cantos superior esquerdo e inferior esquerdo têm arredondamento de 10 pixels. 
+Os cantos superior direito e inferior direito são retos (sem arredondamento).
+*/
+
+.dsc-search-bar button[type="submit"] {
+    border-right: none;
+    border-radius: 10px 0px 0px 10px;
 
 
- /*teste*/
+}
+/* 
+border-radius: 0px 10px 10px 0px;
+
+Primeiro valor (0px): Raio do canto superior esquerdo.
+Segundo valor (10px): Raio do canto superior direito.
+Terceiro valor (10px): Raio do canto inferior direito.
+Quarto valor (0px): Raio do canto inferior esquerdo.
+Resultado: Apenas os cantos superior direito e inferior direito têm arredondamento de 10 pixels. 
+Os cantos superior esquerdo e inferior esquerdo são retos (sem arredondamento).
+*/
+
+
+.dsc-search-bar button[type="reset"] {
+    border-left: none;
+    border-radius: 0px 10px 10px 0px;
+
+
+}
+
+/*teste*/
