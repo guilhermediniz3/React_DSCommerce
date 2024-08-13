@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* declaração de variáveis de css */
+/** declaração de variáveis de css */
 :root {
 
     --dsc-color-bg-primary: #e8e8e8;
@@ -45,8 +45,8 @@ main {
 
 }
 
-/* ------------------------------------------------------------------------------------------------------------  */
-/* header styles  */
+/** ------------------------------------------------------------------------------------------------------------  */
+/** header styles  */
 
 header {
     background-color: var(--dsc-color-bg-secondary);
@@ -81,9 +81,18 @@ nav a {
     font-size: 14px;
     font-weight: 700;
 }
+.dsc-logged-user{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.dsc-logged-user{
+font-size: 12px;
 
-/* ------------------------------------------------------------------------------------------------------------  */
-/* generic styles  */
+}
+
+/** ------------------------------------------------------------------------------------------------------------  */
+/** generic styles  */
 .dsc-mb20 {
     margin-bottom: 20px;
 }
@@ -110,8 +119,8 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
 
 
 
-/* ------------------------------------------------------------------------------------------------------------  */
-/* card styles  */
+/** ------------------------------------------------------------------------------------------------------------  */
+/** card styles  */
 
 .dsc-card {
     border: 1px solid var(--dsc-color-card-border);
@@ -128,8 +137,8 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
 
 }
 
-/* ------------------------------------------------------------------------------------------------------------  */
-/* button styles  */
+/** ------------------------------------------------------------------------------------------------------------  */
+/** button styles  */
 .dsc-btn-page-container {
     /* define a responsividade na resolucao mobile onde o botao ocupa 100 porcento*/
     width: 100%;
@@ -211,9 +220,9 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
     color: var(--dsc-color-font-primary);
 }
 
-/* *  : target elementos com base em seu estado ou posição ::  estiliza partes especificas de um elemento como antes, depois ou dentro do conteudo*/
+/*   : target elementos com base em seu estado ou posição ::  estiliza partes especificas de um elemento como antes, depois ou dentro do conteudo*/
 .dsc-search-bar input:focus {
-    /* * remove a borda ao clicar na pesquisa*/
+    /*  remove a borda ao clicar na pesquisa*/
     outline: none;
     font-size: 16px;
 
