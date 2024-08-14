@@ -1,0 +1,29 @@
+
+@import url("styles.CSS");
+
+#product-form-section{
+    padding: 20px 0;
+}
+.dsc-product-form-container{
+width: 100%;
+max-width:500px;
+/*centraliza o card login ao centro */
+margin:0 auto;
+
+
+}
+
+.dsc-product-form-buttons{
+    width: 100%;
+    display: grid;
+    grid-gap:20px;
+    /*a partir de 210px o botao fica ao lado e menor um sobre o outro. */
+    grid-template-columns: repeat(auto-fill,minmax(210px,1fr));
+
+}
+@media(min-width:576px){
+    #product-form-section{
+        padding: 40px 0;
+    }
+
+}
