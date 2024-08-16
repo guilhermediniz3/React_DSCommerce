@@ -117,7 +117,11 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
 }
 
 
-
+.dsc-section-title{
+    text-align: center;
+    color: var(--dsc-color-font-primary);
+    font-size: 16px;
+}
 
 /** ------------------------------------------------------------------------------------------------------------  */
 /** card styles  */
@@ -366,6 +370,26 @@ border: 1px solid var(--dsc-color-error);
             font-size: 24px;
         }
     }
+/** Table STYLES */
+
+
+.dsc-table{
+width: 100%;
+border-spacing:0;
+border-collapse:collapse;
+
+}
+
+
+.dsc-table thead{
+    background-color: var(--dsc-color-card-bg);
+
+}
+
+.dsc-table tbody{
+    background-color: var(--dsc-color-card-bg);
+
+}
 
 
     /*teste*/
