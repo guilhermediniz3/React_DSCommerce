@@ -122,6 +122,9 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
     color: var(--dsc-color-font-primary);
     font-size: 16px;
 }
+.dsc-txt-left{
+    text-align: left;
+}
 
 /** ------------------------------------------------------------------------------------------------------------  */
 /** card styles  */
@@ -381,15 +384,31 @@ border-collapse:collapse;
 }
 
 
+
 .dsc-table thead{
+    height: 55px;
+    font-size: 14px;
+    color: var(--dsc-color-font-primary);
     background-color: var(--dsc-color-card-bg);
 
 }
+
+
 
 .dsc-table tbody{
+    text-align: center;
+    font-size: 12px;
+    color: var(--dsc-color-font-primary);
     background-color: var(--dsc-color-card-bg);
 
 }
 
 
-    /*teste*/
+
+.dsc-table tbody tr{
+    height: 70px;
+    border-top: 1px solid var(--dsc-color-card-border);
+
+}
+
+    /*teste*=]
