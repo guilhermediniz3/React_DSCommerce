@@ -81,13 +81,15 @@ nav a {
     font-size: 14px;
     font-weight: 700;
 }
-.dsc-logged-user{
+
+.dsc-logged-user {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-.dsc-logged-user{
-font-size: 12px;
+
+.dsc-logged-user {
+    font-size: 12px;
 
 }
 
@@ -117,13 +119,21 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
 }
 
 
-.dsc-section-title{
+.dsc-section-title {
     text-align: center;
     color: var(--dsc-color-font-primary);
     font-size: 16px;
 }
-.dsc-txt-left{
+
+.dsc-txt-left {
     text-align: left;
+}
+
+@media(min-width: 576px) {
+    .dsc-section-title {
+        text-align: left;
+        font-size: 24px;
+    }
 }
 
 /** ------------------------------------------------------------------------------------------------------------  */
@@ -339,53 +349,58 @@ para alinhar o formulario poderia usar tanto o grid quanto o flexbox (display-fl
 .dsc-form-control::placeholder {
     color: var(--dsc-color-font-placeholder)
 }
-.dsc-input-error{
-border: 1px solid var(--dsc-color-error);
+
+.dsc-input-error {
+    border: 1px solid var(--dsc-color-error);
 
 
 }
 
-.dsc-form-error{
+.dsc-form-error {
     color: var(--dsc-color-error);
     font-size: 12px;
     padding-left: 4px;
-    
+
 }
 
-.dsc-select:invalid{
+.dsc-select:invalid {
     color: var(--dsc-color-font-placeholder);
 }
+
 .dsc-select option[disabled] {
-    display:none;
+    display: none;
 
 }
-.dsc-select option{
+
+.dsc-select option {
     color: var(--dsc-color-font-primary);
 }
-.dsc-textarea{
-    resize:none;
+
+.dsc-textarea {
+    resize: none;
     height: 128px;
     padding-top: 10px;
 }
-@media( min-width: 576px)
-   {
-        .dsc-form h2 {
-            font-size: 24px;
-        }
+
+@media(min-width: 576px) {
+    .dsc-form h2 {
+        font-size: 24px;
     }
+}
+
 /** Table STYLES */
 
 
-.dsc-table{
-width: 100%;
-border-spacing:0;
-border-collapse:collapse;
+.dsc-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
 
 }
 
 
 
-.dsc-table thead{
+.dsc-table thead {
     height: 55px;
     font-size: 14px;
     color: var(--dsc-color-font-primary);
@@ -395,7 +410,7 @@ border-collapse:collapse;
 
 
 
-.dsc-table tbody{
+.dsc-table tbody {
     text-align: center;
     font-size: 12px;
     color: var(--dsc-color-font-primary);
@@ -405,10 +420,80 @@ border-collapse:collapse;
 
 
 
-.dsc-table tbody tr{
+.dsc-table tbody tr {
     height: 70px;
     border-top: 1px solid var(--dsc-color-card-border);
 
 }
 
-    /*teste*=]
+.dsc-table th:nth-child(2) {
+    border-top-left-radius: 10px;
+}
+
+.dsc-table th:last-child {
+    border-top-right-radius: 10px;
+}
+
+/*Seletor :nth-child(): Esse seletor pode ser mais complexo e aceitar fórmulas, como :nth-child(2n) (para selecionar todos os elementos pares) ou :nth-child(2n+1) (para selecionar todos os elementos ímpares). No seu caso, :nth-child(2) é específico e seleciona apenas o segundo filho.
+Importância do Contexto: O :nth-child() seleciona elementos com base em sua posição dentro do pai, não apenas o tipo de elemento. Portanto, o :nth-child(2) selecionará o segundo <td> na ordem das células, não o segundo elemento <td> dentro da tabela inteira. */
+.dsc-table td:nth-child(2) {
+    padding-left: 10px;
+}
+
+/*você tem uma tabela onde cada linha (<tr>) possui várias células (<td>), o :last-child se aplica à última célula (<td>) em cada linha, adicionando um preenchimento (padding) de 5 pixels no lado direito dessa célula. */
+.dsc-table td:last-child {
+
+    padding-right: 5px;
+
+}
+
+/** break point  css */
+.dsc-tb576 {
+    display: none;
+}
+
+.dsc-tb768 {
+    display: none;
+}
+
+@media(min-width:576px) {
+    .dsc-tb576 {
+        display: table-cell;
+    }
+
+    .dsc-table th:nth-child(1) {
+        padding-left: 20px;
+        border-top-left-radius: 10px;
+
+    }
+
+    .dsc-table th:nth-child(2) {
+        border-top-left-radius: 0;
+    }
+
+    .dsc-table td:nth-child(1) {
+        padding-left: 20px;
+
+    }
+
+    .dsc-table td:nth-child(2) {
+        padding-left: 0;
+
+    }
+}
+
+@media(min-width:768px) {
+    .dsc-tb768 {
+        display: table-cell;
+    }
+}
+
+
+@media(min-width:992px) {
+
+    .dsc-table tbody {
+        text-align: center;
+        font-size: 16px;
+
+    }
+}
