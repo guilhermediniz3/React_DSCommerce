@@ -6,7 +6,7 @@
     --dsc-color-bg-primary: #e8e8e8;
     --dsc-color-bg-secondary: #ffe500;
     --dsc-color-bg-tertiary: #636363;
-
+    --dsc-color-bg-quaternary:#0caf1d;
     --dsc-color-card-bg: #fff;
     --dsc-color-card-border: #d9d9d9;
     --dsc-color-btn-primary: #3483fa;
@@ -49,7 +49,7 @@ main {
 /** header styles  */
 
 header {
-    background-color: var(--dsc-color-bg-secondary);
+ 
     /* Altura do header*/
     height: 70px;
     /* O display flex permite que os intes fiquem flexíveis dentro do container e podem ser posicionados.*/
@@ -59,11 +59,20 @@ header {
     padding: 0 20px;
 
 }
+.dsc-header-client{
+    background-color: var(--dsc-color-bg-secondary);
+    color: var(--dsc-color-font-primary);
 
+}
+.dsc-header-admin{
+    background-color: var(--dsc-color-bg-quaternary);
+    color: var(--dsc-color-font-tertiary);
+
+}
 nav {
 
 
-    color: var(--dsc-color-font-primary);
+ 
     /* permite os itens serem redimencionados */
     display: flex;
     /* alinha o elemento na outra ponta*/
@@ -94,9 +103,22 @@ nav a {
 .dsc-menu-items-container img{
     width: 20px;
     height: 20px;
+  
 }
 .dsc-menu-item{
     margin-right: 20px;
+    display: flex;
+    align-items: center;
+
+}
+.dsc-menu-item p {
+  display: none;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.dsc-menu-item-active{
+    font-weight: 700;
 }
 .dsc-logged-user {
     display: flex;
@@ -157,6 +179,10 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
     nav h1{
         font-size: 24px;
     }
+    .dsc-menu-item p {
+        display: unset;
+
+      }
 }
 /** ------------------------------------------------------------------------------------------------------------  */
 /** card styles  */
@@ -491,6 +517,7 @@ Importância do Contexto: O :nth-child() seleciona elementos com base em sua pos
 
     .dsc-table th:nth-child(2) {
         border-top-left-radius: 0;
+     
     }
 
     .dsc-table td:nth-child(1) {
