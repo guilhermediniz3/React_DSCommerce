@@ -82,6 +82,22 @@ nav a {
     font-weight: 700;
 }
 
+.dsc-navbar-right{
+    display: flex;
+    align-items: center;
+}
+.dsc-menu-items-container{
+    display: flex;
+
+}
+
+.dsc-menu-items-container img{
+    width: 20px;
+    height: 20px;
+}
+.dsc-menu-item{
+    margin-right: 20px;
+}
 .dsc-logged-user {
     display: flex;
     flex-direction: column;
@@ -136,6 +152,12 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
     }
 }
 
+@media(min-width:576px)
+{
+    nav h1{
+        font-size: 24px;
+    }
+}
 /** ------------------------------------------------------------------------------------------------------------  */
 /** card styles  */
 
