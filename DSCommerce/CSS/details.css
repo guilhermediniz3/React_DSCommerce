@@ -50,11 +50,14 @@
  }
  .dsc-product-details-botton{
  padding: 10px 20px;
+
+
  
  }
  .dsc-product-details-top-bottom h3 {
      color: var(--dsc-color-font-secondary);
      font-size: 20px;
+
  }
  
  .dsc-product-details-top-bottom h4 {
@@ -68,5 +71,24 @@
  
  }
  .dsc-btn-padding{
-    padding-top: 15px;
+    padding-top: 5px;
+}
+
+
+.text-color{
+    color: var(--dsc-color-font-secondary);
+    
+}
+
+.text-color-desc{
+    color:var(--dsc-color-font-primary);
+    font-size: 12px;
+    margin: 0 15px; 
+    text-align: left;
+}
+
+.text-color-descri{
+
+    font-size: 12px;
+    margin: 0 15px; 
 }

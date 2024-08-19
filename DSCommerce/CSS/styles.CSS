@@ -259,6 +259,9 @@ Então, margin: 0 auto; geralmente é usado para centralizar horizontalmente um 
     font-weight: 700;
     cursor: pointer;
 }
+.dsc-btn-padding{
+    margin: 100px
+}
 
 /* *  -----------------------------------------------------------------------------------------------------------------------------------------------*/
 /* * search bar styles formata o botão de pesquisa*/
@@ -546,3 +549,5 @@ Importância do Contexto: O :nth-child() seleciona elementos com base em sua pos
 
     }
 }
+
+
